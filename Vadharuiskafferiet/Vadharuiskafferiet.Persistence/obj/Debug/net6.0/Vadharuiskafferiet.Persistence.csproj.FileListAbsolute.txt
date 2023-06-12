@@ -1,0 +1,17 @@
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\Vadharuiskafferiet.Persistence.deps.json
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\Vadharuiskafferiet.Persistence.runtimeconfig.json
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\Vadharuiskafferiet.Persistence.dll
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\ref\Vadharuiskafferiet.Persistence.dll
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\Vadharuiskafferiet.Persistence.pdb
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\Vadharuiskafferiet.Domain.dll
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\bin\Debug\net6.0\Vadharuiskafferiet.Domain.pdb
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.csproj.AssemblyReference.cache
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.AssemblyInfoInputs.cache
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.AssemblyInfo.cs
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.csproj.CoreCompileInputs.cache
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.csproj.CopyComplete
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.dll
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\ref\Vadharuiskafferiet.Persistence.dll
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.pdb
+C:\projects\vadharuiskafferiet\src\Vadharuiskafferiet\Vadharuiskafferiet.Persistence\obj\Debug\net6.0\Vadharuiskafferiet.Persistence.genruntimeconfig.cache

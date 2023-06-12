@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f86ffe9b-ea39-4c3d-bd29-7a40cbb2b2dd": {
+      "ProjectGuid": "f86ffe9b-ea39-4c3d-bd29-7a40cbb2b2dd",
+      "DisplayName": "Vadharuiskafferiet.Api",
+      "ColorIndex": 0
+    },
+    "8bd24075-fd88-435e-a7bc-d618bb61abc3": {
+      "ProjectGuid": "8bd24075-fd88-435e-a7bc-d618bb61abc3",
+      "DisplayName": "Vadharuiskafferiet.Domain",
+      "ColorIndex": 1
+    },
+    "551a394b-9bf0-4318-975c-00e1d28f473e": {
+      "ProjectGuid": "551a394b-9bf0-4318-975c-00e1d28f473e",
+      "DisplayName": "Vadharuiskafferiet.Persistence",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "3e902e5f-6986-46cb-95af-b31ba941c045": {
+      "ProjectGuid": "3e902e5f-6986-46cb-95af-b31ba941c045",
+      "DisplayName": "Vadharuiskafferiet.WebbClient",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
