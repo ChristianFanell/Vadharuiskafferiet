@@ -8,7 +8,7 @@ namespace Vadharuiskafferiet.Persistence.Entities
 {
     public class RecepieIngredientJoinTable
     {
-        public Guid RecepieId { get; set; }
-        public Guid IngredientId { get; set; }
+        public int RecepieId { get; set; }
+        public int IngredientId { get; set; }
     }
 }

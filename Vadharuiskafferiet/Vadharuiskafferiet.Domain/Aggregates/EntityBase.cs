@@ -12,8 +12,8 @@ namespace Vadharuiskafferiet.Domain.Aggregates
         {
             CreatedTimeStamp = DateTime.UtcNow;
         }
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public DateTime CreatedTimeStamp { get; set; }
-        public DateTime ModifiedTimeStamp { get; set; }
+        public DateTime? ModifiedTimeStamp { get; set; }
     }
 }

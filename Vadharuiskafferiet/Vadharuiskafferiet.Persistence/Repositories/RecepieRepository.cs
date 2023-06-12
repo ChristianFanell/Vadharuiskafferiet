@@ -18,39 +18,19 @@ namespace Vadharuiskafferiet.Persistence.Repositories
             _context = context;
         }
 
-
-        public async Task<List<Recepie>> FindAsync(List<string> list)
+        public Task<Recepie> AddAsync(Recepie entity)
         {
-            return await _context.Recepies
-                .Where(r => r.ContainsIngredients(list))
-                .Include(e => e.Ingredients)
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-
-        public async Task<Recepie> FindByIdAsync(Guid id)
+        public Task<Recepie> DeleteAsync(int id)
         {
-            var result = await _context.Recepies
-                .Where(r => r.Id == id)
-                .Include(e => e.Ingredients)
-                .FirstOrDefaultAsync();
-
-            return result;
+            throw new NotImplementedException();
         }
 
-        public async Task<List<Ingredient>> GetAllIngredientsAsync()
+        public Task<Recepie> UpdateAsync(Recepie entity)
         {
-            return await _context.Ingredients.ToListAsync();
+            throw new NotImplementedException();
         }
-
-        public async Task<List<Ingredient>> FindIngredientsByNameAsync(string name)
-        {
-            return await _context.Ingredients.Where(ingr => ingr.Name.Value.Contains(name)).ToListAsync();
-        }
-
-        //public Task<Recepie> UpdateAsync(Recepie entity)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

@@ -24,9 +24,11 @@ namespace Vadharuiskafferiet.Persistence.Migrations
 
             modelBuilder.Entity("Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities.Ingredient", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedTimeStamp")
                         .HasColumnType("datetime2");
@@ -40,7 +42,7 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                     b.Property<bool>("IsBudget")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("ModifiedTimeStamp")
+                    b.Property<DateTime?>("ModifiedTimeStamp")
                         .HasColumnType("datetime2");
 
                     b.Property<double?>("Quantity")
@@ -53,9 +55,11 @@ namespace Vadharuiskafferiet.Persistence.Migrations
 
             modelBuilder.Entity("Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities.Recepie", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedTimeStamp")
                         .HasColumnType("datetime2");
@@ -63,7 +67,7 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifiedTimeStamp")
+                    b.Property<DateTime?>("ModifiedTimeStamp")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -73,11 +77,11 @@ namespace Vadharuiskafferiet.Persistence.Migrations
 
             modelBuilder.Entity("Vadharuiskafferiet.Persistence.Entities.RecepieIngredientJoinTable", b =>
                 {
-                    b.Property<Guid>("IngredientId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("IngredientId")
+                        .HasColumnType("int");
 
-                    b.Property<Guid>("RecepieId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("RecepieId")
+                        .HasColumnType("int");
 
                     b.HasKey("IngredientId", "RecepieId");
 
@@ -90,8 +94,8 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                 {
                     b.OwnsOne("Vadharuiskafferiet.Domain.Aggregates.ValueObjects.NameValueObject", "Name", b1 =>
                         {
-                            b1.Property<Guid>("IngredientId")
-                                .HasColumnType("uniqueidentifier");
+                            b1.Property<int>("IngredientId")
+                                .HasColumnType("int");
 
                             b1.Property<string>("Value")
                                 .IsRequired()
@@ -114,8 +118,8 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                 {
                     b.OwnsOne("Vadharuiskafferiet.Domain.Aggregates.ValueObjects.NameValueObject", "RecepieName", b1 =>
                         {
-                            b1.Property<Guid>("RecepieId")
-                                .HasColumnType("uniqueidentifier");
+                            b1.Property<int>("RecepieId")
+                                .HasColumnType("int");
 
                             b1.Property<string>("Value")
                                 .IsRequired()
@@ -132,8 +136,8 @@ namespace Vadharuiskafferiet.Persistence.Migrations
 
                     b.OwnsOne("Vadharuiskafferiet.Domain.Aggregates.ValueObjects.DescriptionValueObject", "Description", b1 =>
                         {
-                            b1.Property<Guid>("RecepieId")
-                                .HasColumnType("uniqueidentifier");
+                            b1.Property<int>("RecepieId")
+                                .HasColumnType("int");
 
                             b1.Property<string>("Value")
                                 .IsRequired()
@@ -150,8 +154,8 @@ namespace Vadharuiskafferiet.Persistence.Migrations
 
                     b.OwnsOne("Vadharuiskafferiet.Domain.Aggregates.ValueObjects.RecepieStepValueObject", "Steps", b1 =>
                         {
-                            b1.Property<Guid>("RecepieId")
-                                .HasColumnType("uniqueidentifier");
+                            b1.Property<int>("RecepieId")
+                                .HasColumnType("int");
 
                             b1.Property<string>("Value")
                                 .IsRequired()

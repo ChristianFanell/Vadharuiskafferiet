@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities;
 using Vadharuiskafferiet.Persistence;
+using Vadharuiskafferiet.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,8 @@ builder.Services.AddDbContext<RecepieDbContext>(options =>
 {
     options.UseSqlServer(dbConnectionString);
 });
+
+builder.Services.AddTransient<IRepository<Recepie>, RecepieRepository>();
 
 var app = builder.Build();
 

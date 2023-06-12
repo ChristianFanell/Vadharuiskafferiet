@@ -18,8 +18,6 @@ namespace Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities
             RecepieName = new NameValueObject(name);
         }
 
-        public Guid Id { get; set; }
-
         public DescriptionValueObject Description { get; set; }
 
         public NameValueObject RecepieName { get; set; }

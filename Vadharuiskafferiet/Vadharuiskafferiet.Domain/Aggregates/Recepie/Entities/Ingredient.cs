@@ -13,7 +13,6 @@ namespace Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities
             IngredientType = ingredientType;
         }    
 
-        public Guid Id { get; set; }
         public string? Image { get; set; }
         public NameValueObject Name { get; init; }
         public IngredientTypeEnum IngredientType { get; init; }
