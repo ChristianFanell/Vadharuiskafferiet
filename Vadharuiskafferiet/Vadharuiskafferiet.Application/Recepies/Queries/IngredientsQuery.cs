@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vadharuiskafferiet.Application.Recepie.Query
+namespace Vadharuiskafferiet.Application.Recepies.Query
 {
     internal class IngredientsQuery
     {

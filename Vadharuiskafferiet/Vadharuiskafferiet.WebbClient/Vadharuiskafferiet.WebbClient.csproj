@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Vadharuiskafferiet.Application\Vadharuiskafferiet.Application.csproj" />
     <ProjectReference Include="..\Vadharuiskafferiet.Domain\Vadharuiskafferiet.Domain.csproj" />
     <ProjectReference Include="..\Vadharuiskafferiet.Persistence\Vadharuiskafferiet.Persistence.csproj" />
   </ItemGroup>

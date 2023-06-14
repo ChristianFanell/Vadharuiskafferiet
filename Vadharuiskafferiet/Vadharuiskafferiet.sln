@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vadharuiskafferiet.Persiste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vadharuiskafferiet.WebbClient", "Vadharuiskafferiet.WebbClient\Vadharuiskafferiet.WebbClient.csproj", "{3E902E5F-6986-46CB-95AF-B31BA941C045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vadharuiskafferiet.Application", "Vadharuiskafferiet.Application\Vadharuiskafferiet.Application.csproj", "{FEC4D5A5-1B07-4118-96FD-1445DECE99C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vadharuiskafferiet.Application", "Vadharuiskafferiet.Application\Vadharuiskafferiet.Application.csproj", "{FEC4D5A5-1B07-4118-96FD-1445DECE99C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vadharuiskafferiet.UnitTests", "Vadharuiskafferiet.UnitTests\Vadharuiskafferiet.UnitTests.csproj", "{A59BB491-5528-438B-A6B1-1FA7B25A3B99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FEC4D5A5-1B07-4118-96FD-1445DECE99C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC4D5A5-1B07-4118-96FD-1445DECE99C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC4D5A5-1B07-4118-96FD-1445DECE99C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59BB491-5528-438B-A6B1-1FA7B25A3B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59BB491-5528-438B-A6B1-1FA7B25A3B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59BB491-5528-438B-A6B1-1FA7B25A3B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59BB491-5528-438B-A6B1-1FA7B25A3B99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

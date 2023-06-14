@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pb0ZFGjAjyop2DxxJ8Cs0m6QvX8PN1KcW4EKWckMN91QKlo5g+CZ3XZ526dxMyBgj9BTCDoCNtptGz2hsSeHiw==",
+  "dgSpecHash": "O6VrpGXTjP9rmlPcFgMY/Gtrvd9okr2tGRRS8SoRfLD8Wkh3aF/RJqBbIPwyBri+19G/w6l80haZJpB4ScEgug==",
   "success": true,
-  "projectFilePath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj",
+  "projectFilePath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using System.Reflection;
 using Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities;
 using Vadharuiskafferiet.Persistence;
 using Vadharuiskafferiet.Persistence.Repositories;
@@ -21,6 +22,8 @@ builder.Services.AddDbContext<RecepieDbContext>(options =>
 });
 
 builder.Services.AddTransient<IRepository<Recepie>, RecepieRepository>();
+
+builder.Services.AddMediatR(config => config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 var app = builder.Build();
 

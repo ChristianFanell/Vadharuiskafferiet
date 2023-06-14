@@ -1,20 +1,94 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj": {}
+    "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj": {}
   },
   "projects": {
-    "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
+    "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Application\\Vadharuiskafferiet.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj",
-        "projectName": "Vadharuiskafferiet.Domain",
-        "projectPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\obj\\",
+        "projectUniqueName": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Application\\Vadharuiskafferiet.Application.csproj",
+        "projectName": "Vadharuiskafferiet.Application",
+        "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Application\\Vadharuiskafferiet.Application.csproj",
+        "packagesPath": "C:\\Users\\christian.fanell\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.fanell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
+                "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj"
+              },
+              "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj": {
+                "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj",
+        "projectName": "Vadharuiskafferiet.Domain",
+        "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj",
+        "packagesPath": "C:\\Users\\christian.fanell\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\christian.fanell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +119,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,21 +129,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj": {
+    "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj",
+        "projectUniqueName": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj",
         "projectName": "Vadharuiskafferiet.Persistence",
-        "projectPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\obj\\",
+        "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj",
+        "packagesPath": "C:\\Users\\christian.fanell\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.fanell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +160,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
-                "projectPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj"
+              "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
+                "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj"
               }
             }
           }
@@ -128,7 +206,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -137,21 +216,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj": {
+    "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj",
+        "projectUniqueName": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj",
         "projectName": "Vadharuiskafferiet.WebbClient",
-        "projectPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\obj\\",
+        "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\Vadharuiskafferiet.WebbClient.csproj",
+        "packagesPath": "C:\\Users\\christian.fanell\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.WebbClient\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.fanell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,11 +247,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
-                "projectPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj"
+              "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Application\\Vadharuiskafferiet.Application.csproj": {
+                "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Application\\Vadharuiskafferiet.Application.csproj"
               },
-              "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj": {
-                "projectPath": "C:\\projects\\vadharuiskafferiet\\src\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj"
+              "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj": {
+                "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Domain\\Vadharuiskafferiet.Domain.csproj"
+              },
+              "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj": {
+                "projectPath": "C:\\workspace\\Vadharuiskafferiet\\Vadharuiskafferiet\\Vadharuiskafferiet.Persistence\\Vadharuiskafferiet.Persistence.csproj"
               }
             }
           }
@@ -195,7 +280,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -207,7 +293,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
