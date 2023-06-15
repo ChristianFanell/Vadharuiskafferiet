@@ -30,8 +30,6 @@ namespace Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities
 
         public bool IsVegetarian => _ingredients.All(ing => ing.IsVegetarian);
 
-        public bool IsBudget => _ingredients.All(ing => ing.IsBudget);
-
         public RecepieStepValueObject Steps { get; set; }   
 
         public bool ContainsIngredients(List<string> ingredients)

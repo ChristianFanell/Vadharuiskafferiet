@@ -18,7 +18,7 @@ namespace Vadharuiskafferiet.Application.Extensions
             {
                 Description = recepie.Description.Value,
                 Id = recepie.Id,
-                Ingredients = recepie.Ingredients.Select(ingr => ingr.ToIngredientDTO()).ToList(),
+                Ingredients = recepie.Ingredients.Select(ingr => ingr.Name.Value).ToList(),
                 Name = recepie.RecepieName.Value,
                 Steps = recepie.Steps.ValuesToList,
                 IsVegan = recepie.IsVegan,
@@ -26,16 +26,5 @@ namespace Vadharuiskafferiet.Application.Extensions
                 Image = recepie.ImageUrl
             };
         }
-    }
-
-    public static class IngredientExtensions
-    {
-        public static IngredientDTO ToIngredientDTO(this Ingredient ingredient)
-        {
-            return new IngredientDTO
-            {
-                IngredientName = ingredient.Name.Value,
-            };
-        } 
     }
 }

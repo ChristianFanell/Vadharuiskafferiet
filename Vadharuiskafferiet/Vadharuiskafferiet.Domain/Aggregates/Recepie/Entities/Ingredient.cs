@@ -18,9 +18,6 @@ namespace Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities
         public IngredientTypeEnum IngredientType { get; init; }
         public bool IsVegetarian => IngredientType != IngredientTypeEnum.Meat && IngredientType != IngredientTypeEnum.Fish;
         public bool IsVegan => IsVegetarian && (IngredientType != IngredientTypeEnum.Dairy && IngredientType != IngredientTypeEnum.Egg);
-        public double? Quantity { get; set; }
-        public bool IsBudget { get; set; }
-
         public List<Recepie> Recepies { get; set; } = new();
     }
 

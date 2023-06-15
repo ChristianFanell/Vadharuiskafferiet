@@ -24,8 +24,4 @@
     <ProjectReference Include="..\Vadharuiskafferiet.Domain\Vadharuiskafferiet.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="SQL\" />
-  </ItemGroup>
-
 </Project>

@@ -12,7 +12,7 @@ using Vadharuiskafferiet.Persistence;
 namespace Vadharuiskafferiet.Persistence.Migrations
 {
     [DbContext(typeof(RecepieDbContext))]
-    [Migration("20230612172705_init")]
+    [Migration("20230614185413_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -42,14 +42,8 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                     b.Property<int>("IngredientType")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsBudget")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime?>("ModifiedTimeStamp")
                         .HasColumnType("datetime2");
-
-                    b.Property<double?>("Quantity")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

@@ -39,14 +39,8 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                     b.Property<int>("IngredientType")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsBudget")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime?>("ModifiedTimeStamp")
                         .HasColumnType("datetime2");
-
-                    b.Property<double?>("Quantity")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

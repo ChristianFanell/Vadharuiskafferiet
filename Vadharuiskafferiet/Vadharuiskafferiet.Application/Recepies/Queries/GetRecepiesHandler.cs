@@ -24,7 +24,7 @@ namespace Vadharuiskafferiet.Application.Recepies.Query
         public async Task<List<RecepieDTO>> Handle(GetRecepiesQuery request, CancellationToken cancellationToken)
         {
             var recepies = await _context.Recepies
-                .Where(r => r.ContainsIngredients(request.Ingredients))
+                //.Where(r => r.ContainsIngredients(request.Ingredients))
                 .Include(r => r.Ingredients)
                 .Select(rec => rec.ToRecepieDTO())
                 .ToListAsync();

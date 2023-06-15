@@ -20,8 +20,6 @@ namespace Vadharuiskafferiet.Persistence.Migrations
                     Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IngredientType = table.Column<int>(type: "int", nullable: false),
-                    Quantity = table.Column<double>(type: "float", nullable: true),
-                    IsBudget = table.Column<bool>(type: "bit", nullable: false),
                     CreatedTimeStamp = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifiedTimeStamp = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
