@@ -17,7 +17,7 @@ namespace Vadharuiskafferiet.WebbClient.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("ingredients")]
+        [HttpGet("getingredients")]
         public async Task<IActionResult> GetIngredients()
         {
             var result = await _mediator.Send(new GetIngredientsQuery());

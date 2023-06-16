@@ -23,7 +23,7 @@ namespace Vadharuiskafferiet.WebbClient.Controllers
         {
             var result = await _mediator.Send(new GetRecepiesQuery
             {
-                Ingredients = new List<string> { "Aubergine", "Tomat", "Lök"},
+                Ingredients = new List<int> { 2, 3, 5},
                 IsVegan = true,
                 IsVegetarian = true,
             });

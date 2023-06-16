@@ -11,7 +11,7 @@ namespace Vadharuiskafferiet.Application.Recepies.Query
 {
     public class GetRecepiesQuery : IRequest<List<RecepieDTO>>
     {
-        public List<string> Ingredients { get; set; }
+        public List<int> Ingredients { get; set; }
         public bool IsVegan { get; set; }
         public bool IsVegetarian { get; set; }
     }

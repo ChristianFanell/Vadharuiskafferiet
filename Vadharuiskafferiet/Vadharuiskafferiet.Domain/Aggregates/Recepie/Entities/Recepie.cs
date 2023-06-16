@@ -32,11 +32,12 @@ namespace Vadharuiskafferiet.Domain.Aggregates.Recepie.Entities
 
         public RecepieStepValueObject Steps { get; set; }   
 
-        public bool ContainsIngredients(List<string> ingredients)
+        public bool ContainsIngredients(List<int> ingredientIDs)
         {
-            if (ingredients is null) throw new ArgumentNullException();
-            if (ingredients.Count == 0) throw new ArgumentException();
-            return ingredients.Count > 0 ? ingredients.All(ingr => _ingredients.Select(ingr => ingr.Name.Value).Contains(ingr)) : false;
+            if (ingredientIDs is null) throw new ArgumentNullException();
+            if (ingredientIDs.Count == 0) throw new ArgumentException();
+            
+            return ingredientIDs.All(ingredientID => _ingredients.Any(ing => ing.Id == ingredientID));
         }         
     }
 }

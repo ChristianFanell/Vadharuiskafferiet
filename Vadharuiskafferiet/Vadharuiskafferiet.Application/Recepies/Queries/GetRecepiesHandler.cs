@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Vadharuiskafferiet.Application.DTOs;
@@ -24,8 +25,8 @@ namespace Vadharuiskafferiet.Application.Recepies.Query
         public async Task<List<RecepieDTO>> Handle(GetRecepiesQuery request, CancellationToken cancellationToken)
         {
             var recepies = await _context.Recepies
-                //.Where(r => r.ContainsIngredients(request.Ingredients))
                 .Include(r => r.Ingredients)
+                .Where(r => r.Ingredients.All(ing => request.Ingredients.Any(req => req == ing.Id)))
                 .Select(rec => rec.ToRecepieDTO())
                 .ToListAsync();
 

@@ -32,6 +32,18 @@ builder.Services.AddMediatR(cfg =>
         );
 });
 
+var corsPolicy = "laksjdfl";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: corsPolicy,
+                      builder =>
+                      {
+                          builder.AllowAnyHeader();
+                          builder.AllowAnyOrigin();
+                          builder.AllowAnyMethod();
+                      });
+});
 
 var app = builder.Build();
 
@@ -41,6 +53,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(corsPolicy);
 
 app.UseHttpsRedirection();
 
