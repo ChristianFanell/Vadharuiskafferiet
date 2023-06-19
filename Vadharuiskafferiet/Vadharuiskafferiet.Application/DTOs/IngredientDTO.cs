@@ -2,7 +2,7 @@
 
 namespace Vadharuiskafferiet.Application.DTOs
 {
-    public class IngredientDTO
+    public record IngredientDTO
     {
         public int Id { get; set; }
         public IngredientTypeEnum IngredientType { get; set; }

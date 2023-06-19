@@ -1,6 +1,6 @@
 ﻿namespace Vadharuiskafferiet.Application.DTOs
 {
-    public class RecepieDTO
+    public record RecepieDTO
     {
         public int Id { get; set; }
         public List<string> Ingredients { get; set; } = null!;
