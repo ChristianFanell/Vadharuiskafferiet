@@ -73,7 +73,19 @@ class Trie {
     }
     return true;
   }
+  
+  getTrieList() {
+    return this.getTrieListRec(this.root, "", []);
+  }
 
+  private getTrieListRec(node: Node, chars: string, list: string[]): string[] {
+    if (node.char) chars += node.char;
+    if (node.end) list.push(chars);
+    for (let i = 0; i < node.childs.length; i++) {
+      if (node.childs[i]) this.getTrieListRec(node.childs[i], chars, list);
+    }
+    return list;
+  }
   
 }
 
