@@ -1,6 +1,6 @@
 import { IngredientTypeEnum } from './IngredientTypeEnum';
 
-export interface Ingredients {
+export interface Ingredient {
   id: Number;
   ingredientType: IngredientTypeEnum;
   ingredientName: string;

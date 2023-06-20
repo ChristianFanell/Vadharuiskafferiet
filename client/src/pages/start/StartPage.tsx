@@ -6,7 +6,7 @@ import {
 import { useGetAllIngredientsQuery } from '../../state/api/ingredientsApi';
 import { addIngredient } from '../../state/slices/ingredientSearchSlice';
 import { RootState } from '../../state/store';
-import { Ingredients } from '../../state/types/ingredient';
+import { Ingredient } from '../../state/types/ingredient';
 import { SearchForm } from './componts/SearchForm';
 import { SelectedIngredients } from './componts/SelectedIngredients';
 
@@ -20,10 +20,10 @@ export default function StartPage() {
   if (isLoading) return <div>Laddar...</div>;
   if (error) return <div>fel</div>;
 
-  const dispatchIngredients = (ingredient: Ingredients) =>
+  const dispatchIngredients = (ingredient: Ingredient) =>
     dispatch(addIngredient(ingredient));
 
-  const filterFn = (ingredient: Ingredients) =>
+  const filterFn = (ingredient: Ingredient) =>
     selectedIngredients.value.length > 0
       ? selectedIngredients.value.some((ingr) => ingr.id === ingredient.id)
       : ingredient;
